@@ -1,0 +1,26 @@
+import styled from 'styled-components';
+
+export const NavbarStyled = styled.div`
+    height: 100px;
+    background: #ffe29a;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+`
+
+export const Logo = styled.img`
+    width: auto;
+`
+
+export const Menu = styled.ul`
+    display: flex;
+    list-style: none;
+    font-size: 23px;
+`
+
+export const MenuLi = styled.li`
+    margin: 10px;
+    font-weight: bold;    
+    padding: 6px 20px;
+    color: #0032bc;
+`
