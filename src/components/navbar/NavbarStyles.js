@@ -10,12 +10,19 @@ export const NavbarStyled = styled.div`
 
 export const Logo = styled.img`
     width: auto;
+    @media (max-width: 576px) {
+        width: 200px;
+    }
 `
 
 export const Menu = styled.ul`
     display: flex;
     list-style: none;
     font-size: 23px;
+
+    @media (max-width: 576px) {
+        display: none;
+    }
 `
 
 export const MenuLi = styled.li`

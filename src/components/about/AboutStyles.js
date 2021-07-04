@@ -16,12 +16,12 @@ export const Titulito = styled.h2`
     color: #ffe29a;
     text-align: center;
     margin: 0;
-    font-size: 45px;
+    font-size: clamp(1rem, 2rem, 3rem);
 `
 
 export const Container = styled.div`
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     padding-top: 70px;
 `
@@ -29,6 +29,7 @@ export const Container = styled.div`
 export const AboutContainer = styled.div`
     width: 250px;
     text-align: center;
+    padding: 1rem 0;
 `
 
 export const ImgAbout = styled.img`

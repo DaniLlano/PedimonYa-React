@@ -2,19 +2,19 @@ export const productos = [
     {
         nombre: "Bulbasaur",
         precio: 1500,
-        img: "src/assets/bulbasaur.png",
+        img: "assets/bulbasaur.png",
         id: 1
     },
     {
         nombre: "Squirtle",
         precio: 1500,
-        img: "src/assets/squirtle.png",
+        img: "assets/squirtle.png",
         id: 2
     },
     {
         nombre: "Charmander",
         precio: 1500,
-        img: "src/assets/charmander.png",
+        img: "assets/charmander.png",
         id: 3
     },
 ];

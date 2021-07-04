@@ -10,24 +10,46 @@ export const Parrafito = styled.p`
     text-align: start;
     font-size: 23px;
     margin: 23px 0;
+
+    @media (max-width: 576px) {
+        font-size: 18px;
+    }
 `
 
 export const Btn = styled.button`
     background-color: #0032bc;
     color: #fff;
-    padding: 8px 15px 8px 15px;
+    padding: 8px 15px;
     border: none;
     font-size: 18px;
     border-radius: 10px;
+
+    @media (max-width: 576px) {
+        font-size: 12px;
+    }
 `
 
 export const Container = styled.div`
     width: 400px;
     font-weight: 300;
     margin: auto;
+
+    @media (max-width: 576px) {
+        width: 300px;
+    }
 `
 
 export const SectionImg = styled.img`
-    width: 400px;
+    width: 350px;
     margin: auto;
+
+    @media (max-width: 576px) {
+        width: 250px
+    }
+`
+
+export const SectionSide = styled(SectionImg)`
+@media (max-width: 768px) {
+        display: none;
+    }
 `
