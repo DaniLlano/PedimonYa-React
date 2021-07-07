@@ -1,8 +1,16 @@
 import React from 'react'
-import { productos } from '../../data/data'
+import { useSelector, useDispatch } from 'react-redux'
 import { ProductsStyled, ProductsTitle, CardContainer, Card, CardImg, CardBtn } from './ProductsStyles'
+import * as cartActions from '../../redux/cart/cartActions'
 
 function Products() {
+    const dispatch = useDispatch();
+
+    const productos = useSelector((state) => state.products.productos)
+
+    const addProduct = (id) => {
+        dispatch(cartActions.addItem(id))
+    }
 
     return (
         <ProductsStyled>
@@ -13,7 +21,7 @@ function Products() {
                         <CardImg src={item.img}/>
                         <h3>{item.nombre}</h3>
                         <h3>${item.precio}</h3>
-                        <CardBtn>Agregar al carrito</CardBtn>
+                        <CardBtn onClick={() => addProduct(item)}>Agregar al carrito</CardBtn>
                         </Card>
             )}
                 </CardContainer>

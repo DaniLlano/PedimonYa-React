@@ -31,3 +31,9 @@ export const MenuLi = styled.li`
     padding: 6px 20px;
     color: #0032bc;
 `
+
+export const CartContainer = styled.div`
+display: flex;
+align-items: center;
+align-self: center;
+`
