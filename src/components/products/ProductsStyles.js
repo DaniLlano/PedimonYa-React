@@ -42,4 +42,9 @@ export const CardBtn = styled.button`
     border-radius: 13px;
     font-weight: 700;
     cursor: pointer;
+    transition: 0.5s;
+
+    &:hover{
+        background-color: #d3d3d3;
+    }
 `
