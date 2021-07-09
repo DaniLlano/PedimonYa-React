@@ -4,10 +4,8 @@ import Products from './components/products/Products';
 import Section from './components/section/Section';
 import Orders from './components/orders/Orders'
 import { GlobalStyles } from './styles/GlobalStyles';
-import { useCart } from './hooks/useCart'
 
 function App() {
-  const shoppingCart = useCart()
 
   return (
     <div>
@@ -15,7 +13,7 @@ function App() {
     <Navbar />
     <Section />
     <About />
-    <Products {...shoppingCart}/>
+    <Products/>
     <Orders />
     </div>
   );

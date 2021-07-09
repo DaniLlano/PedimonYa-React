@@ -1,6 +1,7 @@
 import React from 'react'
-import { OrdersTitle, OrdersContainer, OrdersContent, OrderItems, OrderImg, QtyContainer, QtyBtn } from './OrdersStyled'
+import { OrdersTitle, OrdersContainer, OrdersContent, OrderItem, OrderImg, QtyContainer, QtyBtn } from './OrdersStyled'
 import { useSelector } from 'react-redux'
+import HandleQuantity from './HandleQuantity'
 
 function Orders() {
 
@@ -14,20 +15,16 @@ function Orders() {
             {cartItems?.lenght === 0 ?
             (<OrdersTitle>Nada por aquí</OrdersTitle>) : (<>
                 <OrdersTitle>Tu pedido:</OrdersTitle>
-                    {cartItems.map((item) =>
+                    {cartItems.map((item, index) =>
                     <OrdersContent>
-                        <OrderItems key={item.id}>
+                        <OrderItem key={index} id={item.id}>
                                 <OrderImg src={item.img}/>
                                 <div>
                                     <p>{item.nombre}</p>
                                     <p>${item.precio}</p>
                                 </div>
-                            <QtyContainer>
-                                <QtyBtn></QtyBtn>
-                                <QtyBtn></QtyBtn>
-                                <QtyBtn></QtyBtn>
-                            </QtyContainer>
-                        </OrderItems>
+                                    <HandleQuantity item={item} />
+                        </OrderItem>
                     </OrdersContent>
                     )}
             </>)

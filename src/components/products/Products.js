@@ -16,8 +16,8 @@ function Products() {
         <ProductsStyled>
             <ProductsTitle>EL STARTER PACK, REY</ProductsTitle>
             <CardContainer>
-                {productos.map(item => 
-                        <Card id="productito" key={item.id}>
+                {productos.map((item) => 
+                        <Card key={item.id}>
                         <CardImg src={item.img}/>
                         <h3>{item.nombre}</h3>
                         <h3>${item.precio}</h3>

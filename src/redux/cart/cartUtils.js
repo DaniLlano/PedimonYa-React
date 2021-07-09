@@ -15,14 +15,14 @@ export const addItemToCart = (cartItems, itemToAdd) => {
     return [...cartItems, {...itemToAdd, quantity: 1}]
 }
 
-export const removeItemToCart = (cartItems, itemToRemove) => {
-    const duplicateItem = cartItems.find((cartItem) => 
-        cartItem.id === itemToRemove.id
+export const removeItemFromCart = (cartItems, itemToRemove) => {
+    const duplicateItem = cartItems.find(
+      (cartItem) => cartItem.id === itemToRemove.id
     );
 
     if (duplicateItem.quantity === 1) {
         return cartItems.filter((cartItem) =>
-        cartItem.id !== itemToRemove.id)
+        cartItem.id !== itemToRemove.id);
     }
 
     return cartItems.map((cartItem) => {

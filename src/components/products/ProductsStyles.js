@@ -45,6 +45,6 @@ export const CardBtn = styled.button`
     transition: 0.5s;
 
     &:hover{
-        background-color: #d3d3d3;
+        background-color: #f1d081;
     }
 `

@@ -27,9 +27,8 @@ export const OrdersContent = styled.div`
 padding: 0.7rem;
 `
 
-export const OrderItems = styled.div`
-display: grid;
-grid-template-columns: 1rem 2rem 2rem;
+export const OrderItem = styled.div`
+display: flex;
 justify-content: space-between;
 font-weight: bold;
 background-color: #fafafa;

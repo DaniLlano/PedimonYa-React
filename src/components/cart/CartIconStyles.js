@@ -13,6 +13,7 @@ width: 3rem;
 border-radius: 50%;
 right: ${(props) => (!props.show ? "270px" : "40px")};
 transition: right 0.5s ease-in-out;
+box-shadow: 2px 2px 2px 2px;
 `
 
 export const ItemsQty = styled.div`
