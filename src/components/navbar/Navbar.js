@@ -9,10 +9,10 @@ function Navbar() {
             <Logo src={imgLogo}/>
             <Menu>
                 <MenuLi>
-                <a href="#about">About</a>
+                <a href="#about">Nosotros</a>
                 </MenuLi>
                 <MenuLi>
-                <a href="#productos">Our Products</a>
+                <a href="#productos">Productos</a>
                 </MenuLi>
             </Menu>
             <CartContainer>
