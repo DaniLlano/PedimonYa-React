@@ -16,7 +16,7 @@ function Navbar() {
                 </MenuLi>
             </Menu>
             <CartContainer>
-                <CartIcon></CartIcon>
+                <CartIcon />
             </CartContainer>
             
         </NavbarStyled>

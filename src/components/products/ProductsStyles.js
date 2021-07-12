@@ -48,7 +48,7 @@ color: #000;
     cursor: pointer;
     transition: 0.5s;
 
-    &:hover{
-        opacity: 0.8;
+    :hover{
+        box-shadow: 1px 1px 1px 1px #999;
     }
 `

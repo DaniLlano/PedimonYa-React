@@ -18,12 +18,22 @@ export const Parrafito = styled.p`
 
 export const Btn = styled.button`
     background-color: #0032bc;
-    color: #fff;
     padding: 8px 15px;
     border: none;
     font-size: 18px;
     border-radius: 10px;
     cursor: pointer;
+    transition: opacity 0.4s;
+
+    
+    & a {
+        color: #fafafa;
+    }
+
+    :hover {
+        opacity: 0.8;
+    }
+
 
     @media (max-width: 576px) {
         font-size: 12px;

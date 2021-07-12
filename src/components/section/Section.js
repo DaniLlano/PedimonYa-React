@@ -9,7 +9,7 @@ function Section() {
             <Container>
                 <SectionImg src={imgContainer} />
                 <Parrafito>Buscá tu Pokémon favorito y disfrutá de los beneficios de tener un bicho de estos en tu casa! Hay como cinco millones para coleccionar!</Parrafito>
-                <Btn>LOS QUIERO ATRAPAR</Btn>
+                <Btn><a href="#productos">LOS QUIERO ATRAPAR</a></Btn>
             </Container>
             <SectionSide src={imgSide} />
         </SectionStyled>
