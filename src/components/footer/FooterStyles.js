@@ -5,7 +5,7 @@ import { SectionImg } from '../section/SectionStyles'
 export const FooterContainer = styled(AboutStyled)`
 display: flex;
 flex-direction: column;
-padding: 50px 0;
+padding: 50px 0 0;
 color: #fafafa;
 
 & p {
