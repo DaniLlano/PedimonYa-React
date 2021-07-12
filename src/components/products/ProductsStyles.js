@@ -16,8 +16,10 @@ export const CardContainer = styled.div`
 `
 
 export const Card = styled.div`
+display: flex;
+flex-direction: column;
+align-items: center;
     width: 250px;
-    text-align: center;
     border-radius: 30px;
     box-shadow: 3px 3px 3px 3px #999;
     color: #0032bc;
@@ -34,17 +36,19 @@ export const CardImg = styled.img`
     margin: 1rem 0;
 `
 
-export const CardBtn = styled.button`
+export const CardBtn = styled.div`
+color: #000;
     background-color: #ffe29a;
-    border: none;
+    text-align: center;
     margin: 1rem 0;
-    padding: 10px 20px;
+    padding: 10px 0;
+    width: 70%;
     border-radius: 13px;
     font-weight: 700;
     cursor: pointer;
     transition: 0.5s;
 
     &:hover{
-        background-color: #f1d081;
+        opacity: 0.8;
     }
 `

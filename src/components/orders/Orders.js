@@ -1,5 +1,5 @@
 import React from 'react'
-import { OrdersTitle, OrdersContainer, OrdersContent, OrderItem, OrderImg, QtyContainer, QtyBtn } from './OrdersStyled'
+import { OrdersTitle, OrdersContainer, OrdersContent, OrderItem, OrderImg, CompleteOrder} from './OrdersStyled'
 import { useSelector } from 'react-redux'
 import HandleQuantity from './HandleQuantity'
 
@@ -7,13 +7,18 @@ function Orders() {
 
     const hidden = useSelector((state) => state.cart.hidden);
 
-    const cartItems = useSelector((state) => state.cart.cartItems)
+    const cartItems = useSelector((state) => state.cart.cartItems);
+
+    const totalPrice = cartItems.reduce((acc, prod) => {
+        return acc + prod.precio * prod.quantity;
+    }, 0)
 
 
     return (
         <OrdersContainer show={hidden}>
-            {cartItems?.lenght === 0 ?
-            (<OrdersTitle>Nada por aquí</OrdersTitle>) : (<>
+            {cartItems?.length === 0 ? 
+            (<OrdersTitle>Nada por aquí...</OrdersTitle>
+                ) : (<>
                 <OrdersTitle>Tu pedido:</OrdersTitle>
                     {cartItems.map((item, index) =>
                     <OrdersContent>
@@ -26,10 +31,12 @@ function Orders() {
                                     <HandleQuantity item={item} />
                         </OrderItem>
                     </OrdersContent>
-                    )}
-            </>)
+                    )
+                    }
+                    <OrdersTitle>Total: ${totalPrice}</OrdersTitle>
+                    <CompleteOrder>Ir a pagar</CompleteOrder>
+                </>)
         }
-            
             
         </OrdersContainer>
     )

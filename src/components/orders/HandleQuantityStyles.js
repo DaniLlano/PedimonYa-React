@@ -27,3 +27,11 @@ margin: 0px 5px;
     background-color: #ffe3e3;
   }
 `
+
+export const DeleteBtn = styled(DeleteIcon)`
+width: 0.8rem !important;
+height: 0.8rem !important;
+cursor: pointer;
+margin: 0 10px;
+color: red;
+`

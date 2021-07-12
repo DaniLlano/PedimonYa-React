@@ -23,6 +23,7 @@ export const Btn = styled.button`
     border: none;
     font-size: 18px;
     border-radius: 10px;
+    cursor: pointer;
 
     @media (max-width: 576px) {
         font-size: 12px;

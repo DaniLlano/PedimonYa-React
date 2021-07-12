@@ -6,7 +6,7 @@ import { AboutContainer, AboutStyled, Container, ImgAbout, Titulito} from './Abo
 
 function About() {
     return (
-        <AboutStyled>
+        <AboutStyled id="about">
             <Titulito>NO TE QUEDES SIN TU PEDI!</Titulito>
             <p>Dale perri, no te podés quedar sin tu Pédimon! Mirá lo fácil que es...</p>
             <Container>

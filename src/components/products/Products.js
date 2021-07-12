@@ -13,7 +13,7 @@ function Products() {
     }
 
     return (
-        <ProductsStyled>
+        <ProductsStyled id="productos">
             <ProductsTitle>EL STARTER PACK, REY</ProductsTitle>
             <CardContainer>
                 {productos.map((item) => 

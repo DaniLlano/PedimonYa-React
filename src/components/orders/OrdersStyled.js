@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { CardBtn } from '../products/ProductsStyles';
 
 
 export const OrdersTitle = styled.h3`
@@ -15,7 +16,7 @@ background-color: #ffe29a;
 border: 1px solid black;
 border-radius: 0.3rem;
 box-shadow: 3px 3px 3px 0;
-height: calc(100% - 75px);
+height: 70%;
 z-index: 990;
 display: flex;
 flex-direction: column;
@@ -25,6 +26,8 @@ transition: transform 0.5s ease-in-out;
 
 export const OrdersContent = styled.div`
 padding: 0.7rem;
+display: flex;
+flex-direction: column;
 `
 
 export const OrderItem = styled.div`
@@ -60,4 +63,10 @@ width: 1rem;
 height: 1rem;
 border: 1px solid black;
 margin: 0 0.3rem;
+`
+
+export const CompleteOrder = styled(CardBtn)`
+width: 60%;
+background-color: #fafafa;
+margin: 0 auto;
 `

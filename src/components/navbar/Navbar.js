@@ -12,7 +12,7 @@ function Navbar() {
                 <a href="#about">About</a>
                 </MenuLi>
                 <MenuLi>
-                <a href="#productitos">Our Products</a>
+                <a href="#productos">Our Products</a>
                 </MenuLi>
             </Menu>
             <CartContainer>
