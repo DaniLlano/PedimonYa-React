@@ -37,3 +37,28 @@ display: flex;
 align-items: center;
 align-self: center;
 `
+
+export const Anchor = styled.a`
+position: relative;
+text-decoration: none;
+
+:hover {
+    right: 0;
+    text-decoration: none;
+}
+
+:hover:after {
+    border-color: #0032bc;
+    right: 0;
+}
+
+:after {
+    border-top: .1em solid #fff;
+    content: "";
+    position: absolute;
+    right: 100%;
+    top: 2rem;
+    left: 0;
+    transition: right .4s cubic-bezier(0,.5,0,1), border-color .4s ease-out;
+}
+`

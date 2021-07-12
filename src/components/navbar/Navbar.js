@@ -1,6 +1,6 @@
 import React from 'react'
 import imgLogo from '../../assets/pedimon-logo.png'
-import { NavbarStyled, Logo, Menu, MenuLi, CartContainer } from './NavbarStyles'
+import { NavbarStyled, Logo, Menu, MenuLi, CartContainer, Anchor } from './NavbarStyles'
 import CartIcon from '../cart/CartIcon'
 
 function Navbar() {
@@ -9,10 +9,10 @@ function Navbar() {
             <Logo src={imgLogo}/>
             <Menu>
                 <MenuLi>
-                <a href="#about">Nosotros</a>
+                <Anchor href="#about">Nosotros</Anchor>
                 </MenuLi>
                 <MenuLi>
-                <a href="#productos">Productos</a>
+                <Anchor href="#productos">Productos</Anchor>
                 </MenuLi>
             </Menu>
             <CartContainer>
