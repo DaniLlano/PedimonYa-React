@@ -1,7 +1,6 @@
 import React from 'react'
 import imgLogo from '../../assets/pedimon-logo.png'
-import { NavbarStyled, Logo, Menu, MenuLi, CartContainer, Anchor } from './NavbarStyles'
-import CartIcon from '../cart/CartIcon'
+import { NavbarStyled, Logo, Menu, MenuLi, Anchor } from './NavbarStyles'
 
 function Navbar() {
     return (
@@ -15,9 +14,6 @@ function Navbar() {
                 <Anchor href="#productos">Productos</Anchor>
                 </MenuLi>
             </Menu>
-            <CartContainer>
-                <CartIcon />
-            </CartContainer>
             
         </NavbarStyled>
     )

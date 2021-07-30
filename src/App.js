@@ -1,22 +1,23 @@
-import About from './components/about/About';
-import Navbar from './components/navbar/Navbar';
-import Products from './components/products/Products';
-import Section from './components/section/Section';
-import Orders from './components/orders/Orders';
-import Footer from './components/footer/Footer';
 import { GlobalStyles } from './styles/GlobalStyles';
+import Home from './pages/Home'
+import Checkout from './pages/Checkout';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 
 function App() {
 
   return (
     <div>
     <GlobalStyles />
-    <Navbar />
-    <Section />
-    <About />
-    <Products/>
-    <Orders />
-    <Footer />
+    <Router>
+      <Switch>
+        <Route exact path="/">
+          <Home />
+        </Route>
+        <Route>
+          <Checkout exact path="/checkout"/>
+        </Route>
+      </Switch>
+    </Router>
     </div>
   );
 }

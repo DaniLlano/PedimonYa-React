@@ -23,7 +23,7 @@ export const Btn = styled.button`
     font-size: 18px;
     border-radius: 10px;
     cursor: pointer;
-    transition: opacity 0.4s;
+    transition: 0.5s;
 
     
     & a {
@@ -31,7 +31,7 @@ export const Btn = styled.button`
     }
 
     :hover {
-        opacity: 0.8;
+        box-shadow: 1px 1px 1px 1px #999;
     }
 
 

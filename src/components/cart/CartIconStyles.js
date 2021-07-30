@@ -2,6 +2,7 @@ import styled from "styled-components";
 import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
 
 export const CartIconContainer = styled.div`
+top: 2rem;
 display: flex;
 justify-content: center;
 align-items: center;
@@ -17,6 +18,14 @@ box-shadow: 2px 2px 2px 2px;
 
 :hover {
     opacity: 0.7;
+}
+
+@media (max-width: 900px) {
+        top: 4rem;
+    }
+
+@media (max-width: 575px) {
+    top: 2rem;
 }
 `
 

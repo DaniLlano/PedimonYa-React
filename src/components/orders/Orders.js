@@ -2,6 +2,7 @@ import React from 'react'
 import { OrdersTitle, OrdersContainer, OrdersContent, OrderItem, OrderImg, CompleteOrder} from './OrdersStyled'
 import { useSelector } from 'react-redux'
 import HandleQuantity from './HandleQuantity'
+import { Link } from 'react-router-dom'
 
 function Orders() {
 
@@ -19,7 +20,7 @@ function Orders() {
             {cartItems?.length === 0 ? 
             (<OrdersTitle>Nada por aquí...</OrdersTitle>
                 ) : (<>
-                <OrdersTitle>Tu pedido:</OrdersTitle>
+                <OrdersTitle>Tus productos:</OrdersTitle>
                     {cartItems.map((item, index) =>
                     <OrdersContent>
                         <OrderItem key={index} id={item.id}>
@@ -34,7 +35,9 @@ function Orders() {
                     )
                     }
                     <OrdersTitle>Total: ${totalPrice}</OrdersTitle>
-                    <CompleteOrder>Ir a pagar</CompleteOrder>
+                    <CompleteOrder>
+                        <Link to="/checkout">Ir a pagar</Link>
+                    </CompleteOrder>
                 </>)
         }
             

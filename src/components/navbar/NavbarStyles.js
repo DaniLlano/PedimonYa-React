@@ -32,12 +32,6 @@ export const MenuLi = styled.li`
     color: #0032bc;
 `
 
-export const CartContainer = styled.div`
-display: flex;
-align-items: center;
-align-self: center;
-`
-
 export const Anchor = styled.a`
 position: relative;
 text-decoration: none;
