@@ -4,6 +4,7 @@ import imgLogo from '../../assets/pedimon-logo.png'
 import { NavbarStyled, Logo } from '../navbar/NavbarStyles'
 import {OrdersTitle, OrdersContent, OrderImg} from '../orders/OrdersStyled'
 import { CartCheckoutContainer, CartCheckout, NewOrderItem, Total } from './ResumeStyles'
+import CheckoutForm from '../checkoutForm/CheckoutForm'
 
 function Resume() {
 
@@ -21,12 +22,13 @@ function Resume() {
                 <Logo src={imgLogo}/>
             </NavbarStyled>
             <CartCheckoutContainer>
+                <CheckoutForm />
                 <CartCheckout>
                     <h1>Checkout</h1>
                     <OrdersTitle>Tus productos:</OrdersTitle>
                     {cartItems.map((item, index) =>
                     <OrdersContent>
-                        <NewOrderItem key={item.id} id={item.id}>
+                        <NewOrderItem key={index} id={item.id}>
                                 <OrderImg src={item.img}/>
                                 <div>
                                     <p>{item.nombre}</p>
